@@ -41,3 +41,11 @@ switch($opc){
 }#fin switch
 
 }
+Function abreBloc{
+    start notepad
+  }
+  
+  Function abreCalc{
+    start calc
+  }
+  
