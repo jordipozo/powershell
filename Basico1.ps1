@@ -1,6 +1,6 @@
 # Variables y tipos de datos
 
-clear
+clear # Limpiamos pantalla
 
 # Creación de variables
 $palabra = "hola"
@@ -24,3 +24,9 @@ Write-Host $palabra
 Remove-Variable -Name palabra
 Write-Host "A continuación mostramos el tipo de la variable palabra: "
 Write-Host $palabra.GetType().Name
+
+# Casting de Variables
+[float]$flotante=8.6
+Write-Host $flotante
+$entero=[int]$flotante
+Write-Host $entero
