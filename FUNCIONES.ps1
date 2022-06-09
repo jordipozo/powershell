@@ -14,5 +14,11 @@ function Get-MyCounterParam {
     }
     
 }
+function calculateDaysBetweenDates(begin, end) {
+    $begin = [DateTime]$begin
+    $end = [DateTime]$end
+    $days = $begin.Subtract($end).TotalDays
+    return $days
+}
 
 Get-MyCounterParam -ParameterName ComputerName, Computer, ServerName, Host, Machine
