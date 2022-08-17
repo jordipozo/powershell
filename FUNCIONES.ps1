@@ -14,7 +14,10 @@ function Get-MyCounterParam {
     }
     
 }
-function calculateDaysBetweenDates(begin, end) {
+function calculateDaysBetweenDates {
+    param{
+        $begin, $end
+    }
     $begin = [DateTime]$begin
     $end = [DateTime]$end
     $days = $begin.Subtract($end).TotalDays
